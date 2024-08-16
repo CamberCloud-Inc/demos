@@ -51,7 +51,7 @@ def plot_output():
     ax0 = fig.add_subplot(spec[0, 0])
     for i in range(0, 101):
         plotframe(ax0, i)
-    subprocess.Popen(["ffmpeg",
+    subprocess.run(["ffmpeg",
                       "-r", "20",
                       "-s", "1920x1080",
                       "-start_number", "0",
@@ -60,6 +60,7 @@ def plot_output():
                       "-vcodec", "libx264",
                       "-crf", "25",
                       "-pix_fmt", "yuva420p",
+                      "-y",
                       "density.mov"])
     
         
