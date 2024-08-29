@@ -1,0 +1,26 @@
+&star_job
+! see star/defaults/star_job.defaults
+    create_pre_main_sequence_model = .true.
+  ! save a model at the end of the run
+    save_model_filename = 'fin'
+    save_model_when_terminate = .true.
+    pgstar_flag = .false.
+/ ! end of star_job namelist
+
+&eos
+  ! eos options
+  ! see eos/defaults/eos.defaults
+/  ! end of eos namelist
+
+&kap
+  Zbase = 0.02
+
+/ ! end of kap namelist
+
+&controls
+  initial_mass = 1.0
+
+  ! when to stop
+  max_age = 14d9
+
+/ ! end of controls namelist
