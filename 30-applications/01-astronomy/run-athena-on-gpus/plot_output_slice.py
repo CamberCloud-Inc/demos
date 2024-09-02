@@ -20,16 +20,25 @@ def plotslice(i):
     ymin = -1
     ymax = 1
     
-    subprocess.run(["python","plot_slice.py",name,"dens",imgfile,"-c","magma","--vmin","0.9","--vmax","2","--dpi","1915",
-                    "--x1_min","{:f}".format(xmin),
-                    "--x1_max","{:f}".format(xmax),                
-                    "--x2_min","{:f}".format(ymin),
-                    "--x2_max","{:f}".format(ymax)])
-        
+    subprocess.run(["python",
+                    "plot_slice.py",
+                    name,
+                    "dens",
+                    imgfile,
+                    "-c", "magma",
+                    "--vmin", "0.9",
+                    "--vmax", "2",
+                    "--dpi", "300",
+                    "--x1_min", "{:f}".format(xmin),
+                    "--x1_max", "{:f}".format(xmax),                
+                    "--x2_min", "{:f}".format(ymin),
+                    "--x2_max", "{:f}".format(ymax)])
+
+    
 def plot_output():
     
     # plot frames
-    for i in range(0, 301):
+    for i in range(0, 201):
         plotslice(i)
     # create movie
     subprocess.run(["ffmpeg",
@@ -37,11 +46,10 @@ def plot_output():
                     "-s", "1920x1080",
                     "-start_number", "0",
                     "-i", "output_images/img%05d.png",
-                    "-vframes", "341",
+                    "-vframes", "201",
                     "-vcodec", "libx264",
                     "-crf", "25",
                     "-pix_fmt", "yuva420p",
                     "-y",
                     "density.mov"])
-    
         

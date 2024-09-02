@@ -9,13 +9,13 @@ basename  = KH         # problem ID: basename of output filenames
 
 <mesh>
 nghost    = 3
-nx1       = 2048         # Number of zones in X1-direction
+nx1       = 256         # Number of zones in X1-direction
 x1min     = -1.0        # minimum value of X1
 x1max     =  1.0        # maximum value of X1
 ix1_bc    = periodic    # inner-X1 boundary flag
 ox1_bc    = periodic    # inner-X1 boundary flag
 
-nx2       = 2048         # Number of zones in X2-direction
+nx2       = 256         # Number of zones in X2-direction
 x2min     = -1.0        # minimum value of X2
 x2max     = 1.0         # maximum value of X2
 ix2_bc    = periodic    # inner-X2 boundary flag
@@ -29,7 +29,7 @@ ox3_bc    = periodic    # inner-X3 boundary flag
 
 <meshblock>
 nx1       = 256         # Number of cells in each MeshBlock, X1-dir
-nx2       = 512         # Number of cells in each MeshBlock, X2-dir
+nx2       = 256         # Number of cells in each MeshBlock, X2-dir
 nx3       = 1           # Number of cells in each MeshBlock, X3-dir
 
 <time>
@@ -37,7 +37,7 @@ evolution  = dynamic    # dynamic/kinematic/static
 integrator = rk3        # time integration algorithm
 cfl_number = 0.4        # The Courant, Friedrichs, & Lewy (CFL) Number
 nlim       = -1         # cycle limit
-tlim       = 6.0        # time limit
+tlim       = 4.0        # time limit
 ndiag      = 1          # cycles between diagostic output
 
 <hydro>
