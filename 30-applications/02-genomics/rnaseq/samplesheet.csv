@@ -1,0 +1,7 @@
+"sample","fastq_1","fastq_2","strandedness"
+"DRX024467","s3://camber-open-storage-prod/public/fastq/rnaseq/DRX024467_DRR026872.fastq.gz","","auto"
+"DRX026011","s3://camber-open-storage-prod/public/fastq/rnaseq/DRX026011_DRR028935_1.fastq.gz","s3://camber-open-storage-prod/public/fastq/rnaseq/DRX026011_DRR028935_2.fastq.gz","auto"
+"ERX1188904","s3://camber-open-storage-prod/public/fastq/rnaseq/ERX1188904_ERR1109373_1.fastq.gz","s3://camber-open-storage-prod/public/fastq/rnaseq/ERX1188904_ERR1109373_2.fastq.gz","auto"
+"ERX1234253","s3://camber-open-storage-prod/public/fastq/rnaseq/ERX1234253_ERR1160846.fastq.gz","","auto"
+"SRX6725035","s3://camber-open-storage-prod/public/fastq/rnaseq/SRX6725035_SRR9984183.fastq.gz","","auto"
+"SRX9626017","s3://camber-open-storage-prod/public/fastq/rnaseq/SRX9626017_SRR13191702_1.fastq.gz","s3://camber-open-storage-prod/public/fastq/rnaseq/SRX9626017_SRR13191702_2.fastq.gz","auto"
