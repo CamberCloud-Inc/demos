@@ -1,0 +1,2 @@
+patient,sample,lane,fastq_1,fastq_2
+ID1,S1,L002,s3://camber-open-storage-prod/public/fastq/sarek/ID1_S1_L002_R1_001.fastq.gz,s3://camber-open-storage-prod/public/fastq/sarek/ID1_S1_L002_R2_001.fastq.gz
