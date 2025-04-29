@@ -1,0 +1,30 @@
+&star_job
+! see star/defaults/star_job.defaults
+  load_saved_model = .true.
+  load_model_filename = $INPUT_MOD
+
+  ! save a model at the end of the run
+    save_model_when_terminate = .true.
+    save_model_filename = $OUTPUT_MOD
+
+  ! display on-screen plots
+    pgstar_flag = .false.
+/ ! end of star_job namelist
+
+&eos
+  ! eos options
+  ! see eos/defaults/eos.defaults
+/  ! end of eos namelist
+
+&kap
+  ! kap options
+  ! see kap/defaults/kap.defaults
+  use_Type2_opacities = .true.
+  Zbase = 0.02
+
+/ ! end of kap namelist
+
+&controls
+  initial_mass = $INIT_MASS
+
+/ ! end of controls namelist

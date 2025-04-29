@@ -1,0 +1,31 @@
+&star_job
+! see star/defaults/star_job.defaults
+    create_pre_main_sequence_model = .true.
+  ! save a model at the end of the run
+    save_model_filename = $OUTPUT_MOD
+    save_model_when_terminate = .true.
+
+
+    pgstar_flag = .false.
+/ ! end of star_job namelist
+
+&eos
+  ! eos options
+  ! see eos/defaults/eos.defaults
+/  ! end of eos namelist
+
+&kap
+  ! kap options
+  ! see kap/defaults/kap.defaults
+  use_Type2_opacities = .true.
+  Zbase = 0.02
+
+/ ! end of kap namelist
+
+&controls
+  initial_mass = $INIT_MASS
+
+  ! when to stop
+  stop_near_zams = .true.
+
+/ ! end of controls namelist
