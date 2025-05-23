@@ -13,6 +13,6 @@ gmx_mpi mdrun -v -deffnm output/min-s -nb gpu
 printf "10\n" | gmx_mpi energy -f output/min-s.edr -o output/potential-energy-minimization-s.xvg
 gmx_mpi grompp -f inputs/nvt.mdp -c output/min-s.gro -p topol.top -o output/nvt.tpr -pp output/nvt -po output/nvt
 gmx_mpi mdrun -v -deffnm output/nvt -nb gpu
-gmx_mpi trjconv -s output/min-s.tpr -f output/nvt.xtc \
+printf "0\n" | gmx_mpi trjconv -s output/min-s.tpr -f output/nvt.xtc \
   -pbc mol -ur compact \
   -o output/nvt_nopbc.xtc
