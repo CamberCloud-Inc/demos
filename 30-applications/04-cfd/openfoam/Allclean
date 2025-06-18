@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# ---- OpenFOAM + Spack -------------------------------------------------------
+source /opt/spack/share/spack/setup-env.sh          # enable Spack
+eval "$(spack load --sh openfoam@2312)"             # inject FOAM env vars
+#   –OR, if you prefer–
+# source "$(spack location -i openfoam@2312)/etc/bashrc"
+
+# ---- run the tutorial -------------------------------------------------------
+cd "${0%/*}" || exit                                # Run from this directory
+. ${WM_PROJECT_DIR:?}/bin/tools/CleanFunctions      # Tutorial clean functions
+#------------------------------------------------------------------------------
+
+cleanCase0
+
+#------------------------------------------------------------------------------
