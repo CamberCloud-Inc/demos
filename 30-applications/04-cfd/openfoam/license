@@ -1,0 +1,21 @@
+Tutorial-Cylinder LICENSE
+=========================
+Portions of this project are **derived from the “cylinder” tutorial** in  
+<https://develop.openfoam.com/Development/openfoam/tree/master/tutorials/basic/potentialFoam/cylinder>  
+© 2004-2025 OpenCFD Ltd. and contributors.
+
+Copyright © 2025 CAMBERCLOUD INC.
+
+This work is free software: you may redistribute it and/or modify it
+under the terms of the **GNU General Public License, version 3 or (at
+your option) any later version**.
+
+It is distributed **WITHOUT ANY WARRANTY**; without even the implied
+warranty of **MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE**.
+See the GNU GPL for details.
+
+A copy of the full GNU GPL v3 should accompany this file; if not, it is
+available at <https://www.gnu.org/licenses/gpl-3.0.html>.
+
+“OpenFOAM” is a registered trademark of OpenCFD Ltd and is used here
+only to identify the original upstream project.
